@@ -1,7 +1,11 @@
 {
   "compilerOptions": {
-    "target": "es5",
-    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "esnext",
+    "paths": {
+      "@ui/*": ["components/ui/*"],
+      "@images": ["assets/images"]
+    },
+    "lib": ["dom", "dom.iterable", "esnext", "es2015", "es2016"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
